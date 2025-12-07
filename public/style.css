@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111827;
+  color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  text-align: center;
+  background: #1f2933;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#status {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 5px;
+  margin: 10px auto 20px;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  background: #111827;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s ease;
+}
+
+.cell:hover {
+  background: #0b1120;
+}
+
+button#new-game {
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #3b82f6;
+  color: white;
+  transition: background 0.15s ease;
+}
+
+button#new-game:hover {
+  background: #2563eb;
+}
+#player-info {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+#share-link {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #9ca3af;
+  word-break: break-all;
+}
